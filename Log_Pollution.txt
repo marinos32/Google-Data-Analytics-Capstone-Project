@@ -1,0 +1,131 @@
+# 12/04/2024
+
+Downloaded the data from Goverment Website
+Merged Excel files into 1
+Formated as Tables , Removed Duplicates and N/A values
+Converted to Corrected format
+
+
+
+# 13/04/2024
+
+inputed all csv files into BigQuery
+calculated monthly avg per station and pollutant id for each year
+joined all years in one table
+created separate tables for each pollutant_id with the pollutant_names / codes and units of measurements
+
+
+
+
+
+# 14/04/2024
+
+Added desciption for 5 major air pollutants as per NSW health
+
+downloaded missing Particle Matter csv's 
+removed N/A values (EXCEL )
+converted project to 2018-2022 due to limitation of PM data for 2023
+Downloaded and cleaned temperature data(EXCEL )
+
+sepparated pollutants to the 5 needed
+reproduced tables using SQL ( all_year_all_id   , each pollutant_id separatly) 
+
+changed data from station codes to station names and from pollutant ids to pollutant names+codes
+
+
+created daily avgs tables and csv's <- final working sheet !!!
+
+
+fixed date format, station names and types using excel 
+formated avg_daily_value to 3 decimals 
+
+created R objects for each pollutant
+
+
+
+
+# 15/04/2024 
+
+Created line charts for the trends of each pollutant and added them into the presentation slides together with each explanation 
+chart color : 194 RED , 241 GREEN , 200 BLUE , #C2F1C8
+
+
+# 16/04/2024
+
+Converted table in wide format using tidyr - pivot_wider function
+
+
+noted that there are no observations for PM2.5 in industrial stations and contacted the manager responsible for the data to see why and if the data ia available.
+
+
+
+
+# 18/04/2024
+
+got the reply as to why PM data was not on the site and also why N/A values exist.(uploaded every year in Octomber)
+
+
+got the corrected and updated files from the source (2 files ) and included the year 2023 so re-adjusted programm to 2018-2023
+files were in different format from the other files, each for PM10 and PM2.5 respectivly for the years 2018-2023
+
+uploded the files in R and formated them in the correct format to match the other files . 
+Combined the Daily_pm data into a single file 
+
+fixed Station columns (using R ) 
+
+downloaded the completed file into the pc
+
+
+
+# 19/04/2024
+
+since the data was incostistent with the old data i had to start over basicly (thanksfully i have queries and code ready)
+
+total deleted rows for the years 2018-2023 = 763,572
+
+calculated avg daily values for 2023 for the remaining pollutants ( filtered out the ones not needed) using pre-existing sql queries
+created a completed file to use for analysis
+	both in long and wide format
+
+
+Removed CO data from tables because is not in the index calculation ( was my mistake having it there) 
+
+Calculated Index Value and index Pollutant using Excel ( MAX and INDEX-MATCH ) 
+
+# 20/04/2024
+
+Created a loop to set Index Level Quality in R .
+- Created the messy loop and fixed it using ChatGpt
+Started visualizing using Tableau.
+
+When visualising i realized there is no 2023 ... i dont know what i did wrong and where!!!
+
+Found the mistake .... fixing a total script to have ready to run from beggining in case of another mistake.
+fixing again formating and index values using both excel and R.
+
+now i can start visualizing and analysing everything with the correct data (finally) !!
+
+created the first dashboard containing mainly index values 
+
+
+
+# 21/04/2023
+
+Finished up a simple dashboard with the ability to filter years/ months ans show the Index value per station for the selected period
+along with the count of the pollutants contributing to the Index .
+
+created scatter plots with linear and polynomial regression to test correlations between Pollutants and Index Value
+
+
+Working on Project Presentation Sheets
+
+Uploading everything into Github and LinkedIN
+
+
+
+
+
+
+
+
+
