@@ -1,7 +1,7 @@
 **This is my Project for the end of Google's Data Analytics Certificate**
 
 It consists of a hypothetical Scenario where i work for a travel agency company as a Junior Data Analyst.
-
+It focuses more on Cleaning and Analyzing data and not so much on Visualizing it.
 
 Main Task of the company is to increase sales of trip Packages for Islands around the Mediterranean.
 	
