@@ -14,7 +14,7 @@ He wanted to see the levels and change in the pollution, focusing on the major a
 
 He then assign each member of the team an island to Analyze and Report.
 
-I was assigned Cyprus (since this is where i am from ).
+I supposedly was assigned Cyprus (since this is where i am from ).
 
 
 I icluded a Power Point Presentation file which icludes my final presentation as well as some speaker notes in some of the slides.
